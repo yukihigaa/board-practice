@@ -1,0 +1,6 @@
+<div class="create">
+    <%= form_tag('/posts/save') do %>
+        <textarea name="content"><%= @post.content %></textarea>
+        <button type="submmit" class="btn btn-primary">投稿</button>
+    <% end %>
+</div>

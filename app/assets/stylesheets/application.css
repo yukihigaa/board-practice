@@ -1,0 +1,97 @@
+/* 共通=================== */
+html, body {
+    height: 100%;
+}
+
+body {
+    background-image: url('/main.jpeg');
+    background-size: cover;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+/* top=================== */
+.wellcome-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wellcome-text h1 {
+    border: 5px solid white;
+    padding: 30px;
+    color: white;
+}
+
+/* signup=================== */
+.signup, .login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup > form, #login-form {
+    width: 40%;
+    background-color: rgba(255,255,255,0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.signup > form > h4, #login-form h4 {
+    text-align: center;
+}
+
+#signup-btn {
+    margin-right: 10px;
+}
+
+#cancel-btn a {
+    color: white;
+    text-decoration: none;
+}
+
+/* post index=================== */
+.index {
+    padding-top: 80px;
+}
+
+.index .media {
+    width: 70%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.index .user-image {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.index .menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+}
+
+/* post create=================== */
+.create {
+    padding-top: 80px;
+}
+
+.create form {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.create form > textarea {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    height: 150px;
+}
