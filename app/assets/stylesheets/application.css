@@ -25,7 +25,12 @@ body {
     padding: 30px;
     color: white;
 }
-
+.scrollspy {
+    position: relative;
+    height: 90%;
+    margin-top: .5rem;
+    overflow: auto;
+}
 /* signup=================== */
 .signup, .login {
     display: flex;
@@ -58,6 +63,10 @@ body {
     padding-top: 80px;
 }
 
+.index #contents {
+    text-align: center;
+    font-weight: 700;
+}
 .index .media {
     width: 70%;
     margin: 0 auto;
