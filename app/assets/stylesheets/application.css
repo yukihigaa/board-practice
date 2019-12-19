@@ -12,6 +12,13 @@ body {
     color: white;
     text-decoration: none;
 }
+.flash-msg {
+    text-align: center;
+    background-color: dodgerblue;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+}
 
 /* top=================== */
 .wellcome-text {
@@ -27,7 +34,7 @@ body {
 }
 .scrollspy {
     position: relative;
-    height: 90%;
+    height: 80%;
     margin-top: .5rem;
     overflow: auto;
 }
@@ -60,7 +67,7 @@ body {
 
 /* post index=================== */
 .index {
-    padding-top: 80px;
+    height: 85%;
 }
 
 .index #contents {

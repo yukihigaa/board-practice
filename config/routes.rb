@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   get 'posts/index'
   get '/' => 'home#top'
   get '/signup' => 'home#signup'
+  post '/signup' => 'home#signupCreate'
   get '/signin' => 'home#signin'
   
   get 'posts/create' => 'posts#create'
