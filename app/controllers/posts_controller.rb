@@ -7,7 +7,7 @@ class PostsController < ApplicationController
   def save
     #usersテーブルとpostsテーブルを紐付けたら、user_idを@current_user.id でもってこれるようにする＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
     #今は一旦１9で！
-    @post = Post.new(content: params[:content], user_id: 19)
+    @post = Post.new(content: params[:content], user_id: @current_user.id)
     if @post.save
       flash[:notice] = '投稿内容を保存しました'
       redirect_to('/posts/index')
@@ -19,6 +19,7 @@ class PostsController < ApplicationController
 
   def index
     @posts = Post.all.order(updated_at: :desc)
+    # @user = User.find_by(id: @post.user_id)
   end
 
   def edit

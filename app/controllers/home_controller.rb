@@ -16,6 +16,7 @@ class HomeController < ApplicationController
     user = User.new(username: user_name, email: email, password: password)
     
     if user.save
+      session[:user_id] = user.id
       flash[:notice] = 'ユーザー登録が完了しました'
       redirect_to('/posts/index')
     else
